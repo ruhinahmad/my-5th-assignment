@@ -5,15 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>My Fifth Assignment</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700;800;900&display=swap');
+        .custom-width{
+            width: 1000px;
+        }
+        .grid.bg-white.items-center {
+            width: 248px;
+        }
+        .bg-white.block {
+            width: 248px;
+        }
+        button.btn-aply {
+            right: 152px;
+            width: 70px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+         }
+         button#buy-btn {
+            margin-top: -19px;
+        }
+        button#mod-btn {
+            margin-top: 20px;
+        }
+        .w-11\/12.mx-auto.mt-3.mb-6.py-10.object-center.bg-slate-200 {
+            height: 220px;
+        }
+    
       </style>
 </head>
-<body>
-    <header >
-        <section class="max-h-screen bg-red-100">
+<body class="bg-slate-100">
+    <header>
+        <section class="bg-red-50 max-h-screen">
             <div class="grid grid-cols-2">
                 <div class="grid text-center items-center">
                     <div>
@@ -21,7 +48,7 @@
                     <h4 class="mt-6 text-3xl font-bold ">Purchase TK 200 or</h4> <h4 class="text-3xl font-bold">above & get <span class="text-3xl font-bold text-rose-500">20% off</span></h4>
                 <div class="mt-8">
                     <p class="mr-2 text-sm font-bold inline-block text-slate-700">Use Promo Code</p>
-                    <button class="bg-rose-500  text-xs font-bold text-white py-2 px-6">SELL200</button>
+                    <button class="bg-rose-500  text-xs text-white rounded py-2 px-6">SELL200</button>
                 </div>
                     </div>
                 </div>
@@ -35,7 +62,196 @@
         </section>
     </header>
     <main>
+        <!--Card section start here-->
+        <section class="custom-width mx-auto">
+            <h1 class="font-bold text-3xl mt-10 mb-8">Kitchenware</h1>
+            <div class="grid grid-cols-4 gap-16">
+                <div class=" mb-8 pb-6 grid bg-white  items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center  bg-slate-200">
+                        <img class="mx-auto" src="./images/prod1.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <strong class="block">K. Accessories</strong>
+                        <p class="text-gray-400">39.00 TK</p>
+                    </div>
+                </div>
+                <div class=" mb-8 pb-6 grid bg-white items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod2.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <strong class="block">Kitchen Wood Items</strong>
+                        <p class="text-gray-400">25.00 TK</p>
+                    </div>
+                </div>
+                <div class=" mb-8 pb-6 grid bg-white items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod3.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <strong class="block">Home Cooker</strong>
+                        <p class="text-gray-400">49.00 TK</p>
+                    </div>
+                </div>
+                <!--SideBar Start Here-->
+                <div>
+                    <div class="bg-white grid h-28 rounded">
+                        <div class="pl-3 mt-4">
+                            <strong class="mb-3 inline-block">Have coupon?</strong>
+                            <input id="input-field" type="text" name="" class="custom-width py-2  text-xs rounded-r-full rounded ring-2 ring-pink-300 ring-inset w-auto pl-4 relative" placeholder="Coupon code">
+                            <button class="btn-aply rounded-r-full bg-rose-500  text-xs font-bold text-white py-2 px-6 absolute ">Apply</button>
+                        </div>
+                    </div>
+                    <div class="bg-white mt-4 grid  rounded pt-5 pb-16">
+                        <ol class="list-decimal ml-7 text-sm font-bold mb-4 ">
+                            <li class="mb-2">Home Cocker</li>
+                            <li class="mb-2">Sports Cats</li>
+                            <li class="mb-2">Kitchen Wood Items</li>
+                        </ol>
+                        <ol class="ml-3 text-sm font-bold">
+                            <li class="mb-2">Total Price: <p class="inline-block text-slate-400 font-semi-bold">257.00 TK</p></li>
+                            <li class="mb-2">Discount: <p class="inline-block text-slate-400 font-semi-bold">257.00 TK</p></li>
+                            <li class="mb-2">Total: <p class="inline-block text-slate-400 font-semi-bold">257.00 TK</p></li>
+                        </ol>
+                    </div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button id="buy-btn" class="btn mt-0 bg-rose-500 items-center grid text-sm font-bold text-white rounded py-2 px-8 mt-16 mx-auto" onclick="my_modal_1.showModal()">open modal</button>
+                    <dialog id="my_modal_1" class="modal overflow-y-hidden rounded">
+                    <form method="dialog" class="modal-box text-center h-96 w-96">
+                        <img class="mt-10 mx-auto" src="images/congo.png" alt="">
+                        <h3 class="font-bold text-3xl">Congratulatins!</h3>
+                        <p class="py-4">Your Purchase the product</p>
+                        <button id="mod-btn" class="w-42 bg-rose-500 items-center grid text-sm font-bold text-white rounded py-2 px-8 mt-16 mx-auto">Go Home</button>
+                        <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        </div>
+                    </form>
+                   
 
+                    </dialog>
+                    
+                    </div>
+                <!--SideBar end Here-->
+            </div>
+        </section>
+        <section class="custom-width mx-auto ">
+            <h1 class="font-bold text-3xl mt-10 mb-8">Sportswear</h1>
+            <div class="grid grid-cols-4 gap-16">
+                <div class=" mb-8 pb-6 grid bg-white  items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod4.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <strong class="block">Sports Back Cap</strong>
+                        <p class="text-gray-400">49.00 TK</p>
+                    </div>
+                </div>
+                <div class=" mb-8 pb-6 grid bg-white items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod5.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <strong class="block">Full Jersey Set</strong>
+                        <p class="text-gray-400">69.00 TK</p>
+                    </div>
+                </div>
+                <div class=" mb-8 pb-6 grid bg-white items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod6.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <strong class="block">Sports cates</strong>
+                        <p class="text-gray-400">159.00 TK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="custom-width mx-auto">
+            <h1 class="font-bold text-3xl mt-10 mb-8">Furniture</h1>
+            <div class="grid grid-cols-4 gap-16">
+                <div class=" mb-8 pb-6 grid bg-white  items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod7.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-regular fa-star"></i></span>
+                        <strong class="block">Single Relax Chair</strong>
+                        <p class="text-gray-400">185.00 TK</p>
+                    </div>
+                </div>
+                <div class=" mb-8 pb-6 grid bg-white items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod8.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <strong class="block">Children play</strong>
+                        <p class="text-gray-400">299.00 TK</p>
+                    </div>
+                </div>
+                <div class=" mb-8 pb-6 grid bg-white items-center rounded">
+                    <div class="w-11/12 mx-auto mt-3 mb-6 py-10 object-center bg-slate-200">
+                        <img class="mx-auto" src="./images/prod9.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+                        <strong class="block">Flexible Sofa</strong>
+                        <p class="text-gray-400">339.00 TK</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!--Card section end here-->
+
+        <!--Payoff section start here-->
+
+        
+
+        <!--Payoff section end here-->
     </main>
+    <script src="js/summer.js"></script>
 </body>
 </html>
